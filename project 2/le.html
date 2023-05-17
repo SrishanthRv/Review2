@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bike Booking</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Bike Booking Form</h1>
+  <form action="booking_process.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="bikeModel">Bike Model:</label>
+    <select id="bikeModel" name="bikeModel" required>
+      <option value="RC125">RC 125</option>
+      <option value="RC200">RC 200</option>
+      <option value="RC390">RC 390</option>
+      <option value="Duke125">Duke 125</option>
+      <option value="Duke200">Duke 200</option>
+      <option value="Duke250">Duke 250</option>
+      <option value="Duke390">Duke 390</option>
+      <option value="Adventure250">Adventure 250</option>
+      <option value="Adventure390">Adventure 390</option>
+    </select>
+    
+    <label for="bookingDate">Booking Date:</label>
+    <input type="date" id="bookingDate" name="bookingDate" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
